@@ -1,0 +1,200 @@
+/*********************************************************** Paginas ***********************************************************/
+.paginaprincipal, .paginacuenta, .paginamenu, .paginabusca{
+    font-family: 'century gothic';
+    align-items: center;                                /*Formato general */
+    background-color:#191919;
+    justify-content: center;
+}
+
+.paginaprincipal {
+    text-align: center;
+    color: #D8BC5E;
+}
+
+.container{
+    width: 100%;
+}
+.container2{
+    display: flex;
+    width: 100%;
+} 
+.column {
+float: left;
+width: 30%; 
+}
+.columna {
+    float: center;
+    width: 50%; 
+}
+.columna2{
+    float: left;
+    width: 50%; 
+    color: #111111;
+}
+.gridcontainer {
+    width: 100%;
+}
+
+/*********************************************************** Botones ***********************************************************/
+
+.nav-boton, .nav-botonsesion, .botonprincipal, .botonprincipal2, .botonprincipal3, .botonprincipal4, .busquedaboton{
+    color:#D8BC5E;
+    border-radius: 25px;
+    text-align: center;                               /*Formato general */
+    transition: .3s ease;
+} 
+
+.nav-boton{
+    background: #111111;
+    width: 325px;
+    height: 45px;
+    border: 2px solid #111111;
+    font-size: 18px;
+}
+.nav-botonsesion{
+    background: #111111;
+    width: 150px;
+    height: 45px;
+    border: 2px solid #111111;
+    font-size: 18px;
+}
+
+.botonprincipal{
+    background: #111111;
+    border: 2px solid #111111;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 400px;
+    height: 40px;
+}
+
+.botonprincipal2, .botonprincipal3,.botonprincipal4{
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+    border: 2px solid #D8BC5E;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 35px;
+    
+}
+.botonprincipal2{
+    background-image: url(../imagenes/hoteles.jpg);
+}
+.botonprincipal3{
+    background-image: url(../imagenes/paquetes.jpg);
+}
+.botonprincipal4{
+    background-image: url(../imagenes/top4.jpg);
+}
+
+
+/*********************************************************** Casillas ***********************************************************/
+
+/*********************************************************** Extra ***********************************************************/
+
+.resultados{
+    margin-right: 200px;
+    margin-left: 200px;
+    color: #191919;
+    display: flex;
+    text-align: center;
+    background: #D8BC5E;
+    border: 5px solid #D8BC5E;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    box-shadow: 0 0 1px #D8BC5E, 0 0 11px #D8BC5E, 0 0 1px #D8BC5E;
+    font-family: 'century gothic';
+}
+.resultados7{
+    margin-right: 300px;
+    margin-left: 300px;
+    color: #191919;
+    display: flex;
+    text-align: center;
+    background: #D8BC5E;
+    border: 5px solid #D8BC5E;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 0 2px #D8BC5E, 0 0 10px #D8BC5E, 0 0 20px #D8BC5E;
+    font-family: 'century gothic';
+}
+
+
+
+/***********************************************************Cambio de color botones***********************************************************/
+.nav-boton:hover, .nav-botonsesion:hover, .botonprincipal:hover, .botonprincipal2:hover, .botonprincipal3:hover, .perfilboton:hover, .busquedaboton:hover,.botonprincipal4:hover{
+    display: inline-block;
+    background: #D8BC5E;
+    box-shadow: 0 0 2px #D8BC5E, 0 0 10px #D8BC5E, 0 0 20px #D8BC5E;
+    text-align: center;
+    border:2px solid #D8BC5E;
+    color:#111111;
+}
+
+
+.formator2{
+    color:#111111;
+    text-align: left;                         
+    font-size: 18px;
+    width: 17%;
+    float: left;    
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.formator3{
+    color:#111111;
+    text-align: center;                         
+    font-size: 30px;
+    width: 50%;
+    float: right;   
+    justify-content: right;
+    align-items: right;
+    margin:auto;
+}
+button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,orange, black,black,orange, black,black,orange, black,black,orange);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(20px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/***********************************************************Cambio de color botones***********************************************************/
